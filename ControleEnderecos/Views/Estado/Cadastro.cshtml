@@ -1,14 +1,60 @@
 @{
     //Definindo o layout padrão
     Layout = "_Layout";
-}
-<div class="card">
-  
-  
     
-    <img class="card-img-top" src="holder.js/100x180/" alt="Title" />
+    /*Associando a página qual entidade desejo utilizar para 
+    realizar o cadastro*/
+    @model ControleEnderecos.Entidades.Estado
+}
+<!--Inicio:card-->
+<div class="card">          
+
+    <!--Inicio:card-body-->
     <div class="card-body">
-        <h4 class="card-title">Title</h4>
-        <p class="card-text">Text</p>
+
+        <h4 class="card-title">Estado</h4>  
+
+         <!--Inicio:Form:formCadastro-->
+          <form method="post" id="formCadastro" action="InserirEstado" >            
+
+                <div class="mb-3">
+                <label asp-for="Nome" class="form-label">Nome</label>
+                <input
+                    type="text"
+                    asp-for="Nome"
+                    class="form-control"
+                    name="inputNome"
+                    id="inputNome"
+                    aria-describedby="helpId"
+                    placeholder=""/>          
+            </div>
+
+            <div class="mb-3"></div>
+                    <label asp-for="Uf" class="form-label">Uf</label>
+                    <input
+                        asp-for="Uf"
+                        type="text"
+                        class="form-control"
+                        name="inputUf"
+                        id="inputUf"
+                        aria-describedby="helpId"
+                        placeholder=""/>
+
+        </div>          
+
+            <button
+                type="submit"
+                class="btn btn-primary"
+            >
+                Confirmar
+            </button>            
+
+
+        </form>
+        <!--Final:Form:formCadastro-->
+
     </div>
+    <!--Fim:card-body-->
+
 </div>
+<!--Fim:card-->

@@ -1,4 +1,5 @@
 using ControleEnderecos.BancoDados;
+using ControleEnderecos.Entidades;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ControleEnderecos.Controllers
@@ -22,15 +23,30 @@ namespace ControleEnderecos.Controllers
         DEVE possuir um método com o mesmo Nome.*/
         public ActionResult Index()
         {
-            
-            
             return View();
         }
+
         /*Método que referência a página de cadastro dos estados.
         Devemos criar uma página Cadastro.cshtml na pasta Views/Estado*/
         public ActionResult Cadastro()
         {
             return View();
+        }
+
+        /*Esse método é chamado pelo formulário na página HTML
+        que está utilizando o Verbo Post, dessa forma, devemos criar
+        um método que o formulário HTML está realizando a requisição*/
+        [HttpPost]
+        public ActionResult InserirEstado(Estado estado)
+        {
+            //Verifica se foi enviando algum dado pelo formulário HTML
+            if (ModelState.IsValid)
+            {   
+                //Inserindo o Estado na base de dados
+                _dbContext.Estados.Add(estado);
+            }
+            //Retorna para para a página principal do Estado
+            return View("Cadastro");
         }
 
 

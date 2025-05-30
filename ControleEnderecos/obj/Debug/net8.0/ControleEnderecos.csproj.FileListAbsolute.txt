@@ -153,3 +153,4 @@ C:\Users\Aluno\Documents\PauloVinicius\Visual Studio Projects\3Info\ControleEnde
 C:\Users\Aluno\Documents\PauloVinicius\Visual Studio Projects\3Info\ControleEnderecos\ControleEnderecos\obj\Debug\net8.0\ControleEnderecos.pdb
 C:\Users\Aluno\Documents\PauloVinicius\Visual Studio Projects\3Info\ControleEnderecos\ControleEnderecos\obj\Debug\net8.0\ControleEnderecos.genruntimeconfig.cache
 C:\Users\Aluno\Documents\PauloVinicius\Visual Studio Projects\3Info\ControleEnderecos\ControleEnderecos\obj\Debug\net8.0\ref\ControleEnderecos.dll
+C:\Users\Aluno\Documents\PauloVinicius\Visual Studio Projects\3Info\ControleEnderecos\ControleEnderecos\obj\Debug\net8.0\ControleEnderecos.sourcelink.json
