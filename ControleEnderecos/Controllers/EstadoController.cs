@@ -22,6 +22,7 @@ namespace ControleEnderecos.Controllers
         DEVE possuir um método com o mesmo Nome.*/
         public ActionResult Index()
         {
+            
             return View();
         }
         /*Método que referência a página de cadastro dos estados.
