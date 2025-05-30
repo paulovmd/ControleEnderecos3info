@@ -23,6 +23,7 @@ namespace ControleEnderecos.Controllers
         public ActionResult Index()
         {
             
+            
             return View();
         }
         /*Método que referência a página de cadastro dos estados.

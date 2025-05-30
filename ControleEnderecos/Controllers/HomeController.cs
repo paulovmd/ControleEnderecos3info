@@ -9,6 +9,7 @@ namespace ControleEnderecos.Controllers
     public class HomeController : Controller
     {
         
+        
         /*Método que vai referência a página
         da área principal do Home*/
         public IActionResult Index()
